@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="pass-gen.css">
+    <link rel="icon" type = "img/png" href="key.png">
+</head>
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+        <div class="pw">
+            <button class="pw-button">COPY</button>
+        </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control"><label for="pw-len"></label>Password Length<input id ="pw-len" type="number" min="4" max="40"></div>
+            <div class="form-control"><label for="upper">Contain Uppercase Letter</label><input id ="upper" type="checkbox"></div>
+            <div class="form-control"><label for="lower">Contain Lowercase Letter</label><input id ="lower" type="checkbox"></div>
+            <div class="form-control"><label for="number">Contain Numbers</label><input id ="number" type="checkbox"></div>
+            <div class="form-control"><label for="symbol">Contain Symbols</label><input id ="symbol" type="checkbox"></div>
+        </div>
+    </div>
+    <script src="pass-gen.js"></script>
+</body>
+</html>

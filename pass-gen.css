@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(93, 87, 155);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+.pw-container{
+    background-color: rgb(53, 43, 139);
+    width: 400px;
+}
+.pw-header{
+  padding: 1rem;
+}
+.pw-body{
+padding: 1rem;
+}
+.pw{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(93, 87, 155);
+    position: relative;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.pw-button{
+    position: absolute;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    bottom: 0;
+    right: 0%;
+    font-family: inherit;
+    background-color:rgb(33, 30, 59);
+    transform: translate(0 , 50%);
+}
