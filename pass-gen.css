@@ -1,44 +1,82 @@
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(93, 87, 155);
+
+body {
+    background-image: url(images/pass.jpg);
     color: white;
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
     min-height: 100vh;
 }
-.pw-container{
-    background-color: rgb(53, 43, 139);
-    width: 400px;
+
+.pw-container {
+    background-color: rgb(14, 24, 53);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
 }
-.pw-header{
-  padding: 1rem;
-}
-.pw-body{
-padding: 1rem;
-}
-.pw{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: rgb(93, 87, 155);
-    position: relative;
-    font-size: 2rem;
+
+.pw-header {
     padding: 1rem;
 }
-.pw-button{
-    position: absolute;
-    color: white;
-    padding: 0.25rem 0.5rem;
+
+.pw {
+    background-color: rgb(29, 20, 22);
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button {
+    background-color: rgb(202, 16, 16);
     border: none;
-    bottom: 0;
-    right: 0%;
+    color: rgb(199, 190, 207);
+    cursor: pointer;
     font-family: inherit;
-    background-color:rgb(33, 30, 59);
-    transform: translate(0 , 50%);
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    background-color: #dbd5bf;
+    border: none;
+    color: rgb(5, 2, 14);
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
 }
